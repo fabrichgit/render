@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const { User } = require('./model');
 const cors = require('cors');
 const port = 3000; // Replace with your desired port number
 
