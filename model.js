@@ -3,7 +3,7 @@
 const Sequelize = require('sequelize');
 
 // Spécifiez l'URL de connexion à votre base de données PostgreSQL
-const dbUrl = 'postgres://fabrich:Wg4tdp5HNGqimIZAZ2XwRUUzlJYXfX5S@dpg-cjri4glhe99c73aqhe60-a.singapore-postgres.render.com/testdb_a99p';
+const dbUrl = 'postgres://fabrich:Wg4tdp5HNGqimIZAZ2XwRUUzlJYXfX5S@dpg-cjri4glhe99c73aqhe60-a/testdb_a99p';
 
 // Créez une instance Sequelize en utilisant l'URL de connexion
 const sequelize = new Sequelize(dbUrl, {
