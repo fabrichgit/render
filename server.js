@@ -1,22 +1,11 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const sequelize = require('sequelize');
 const port = 3000; // Replace with your desired port number
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
 app.use(cors());
-
-// Testez la connexion à la base de données
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('Connexion à la base de données PostgreSQL réussie');
-  })
-  .catch((err) => {
-    console.error('Erreur de connexion à la base de données:', err);
-});
 
 // Route POST pour ajouter un utilisateur
 app.post('/api/users', (req, res) => {
