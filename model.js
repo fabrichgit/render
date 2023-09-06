@@ -26,11 +26,14 @@ const User = sequelize.define('User', {
     type: Sequelize.STRING,
     allowNull: false,
     unique: true, // Assurez-vous que les noms d'utilisateur sont uniques
-  },
-    keyword: {
+  }
+});
+
+const Password = sequelize.define('Password', {
+  password: {
     type: Sequelize.STRING,
     allowNull: false,
-    unique: false, // Assurez-vous que les noms d'utilisateur sont uniques
+    unique: true, // Assurez-vous que les noms d'utilisateur sont uniques
   }
 });
 
