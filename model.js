@@ -27,7 +27,7 @@ const User = sequelize.define('User', {
     allowNull: false,
     unique: true, // Assurez-vous que les noms d'utilisateur sont uniques
   },
-  password: {
+  phoneNumber: {
     type: Sequelize.STRING,
     allowNull: false,
     unique: true, // Assurez-vous que les noms d'utilisateur sont uniques
