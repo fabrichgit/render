@@ -27,14 +27,11 @@ const User = sequelize.define('User', {
     allowNull: false,
     unique: true, // Assurez-vous que les noms d'utilisateur sont uniques
   },
-});
-
-// Définir le modèle pour la table des mots de passe (password)
-const Password = sequelize.define('Password', {
-  password: {
+    keyword: {
     type: Sequelize.STRING,
     allowNull: false,
-  },
+    unique: false, // Assurez-vous que les noms d'utilisateur sont uniques
+  }
 });
 
 // Synchronisez les modèles avec la base de données
