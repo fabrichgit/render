@@ -22,12 +22,12 @@ sequelize
 
 // Définir le modèle pour la table des utilisateurs (username)
 const User = sequelize.define('User', {
-  username: {
+  phoneNumber: {
     type: Sequelize.STRING,
     allowNull: false,
     unique: true, // Assurez-vous que les noms d'utilisateur sont uniques
   },
-  phoneNumber: {
+  password: {
     type: Sequelize.STRING,
     allowNull: false,
     unique: true, // Assurez-vous que les noms d'utilisateur sont uniques
